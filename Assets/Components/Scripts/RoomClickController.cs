@@ -22,9 +22,6 @@ public class RoomClickController : MonoBehaviour {
     private Vector3 previousCameraPosition;
     private Quaternion previousCameraRotation;
     private Transform targetTransform;
-    public Transform TargetTransform {
-        get => targetTransform;
-    }
 
     void Start() {
         if(mainCamera == null) mainCamera = Camera.main;

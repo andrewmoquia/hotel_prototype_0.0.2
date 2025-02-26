@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public static class Helper {
     public static Transform FindParentWithTag(Transform child, string tag) {
@@ -24,5 +25,23 @@ public static class Helper {
             child = child.parent;
         }
         return child; // Return the topmost parent
+    }
+
+    public static Toggle CreateToggle(GameObject prefab, Transform panel) {
+        GameObject toggleObj = Object.Instantiate(prefab, panel);
+        Toggle toggle = toggleObj.GetComponent<Toggle>();
+        return toggle;
+    }
+
+    public static Toggle CreateToggle(GameObject prefab, Transform panel, Sprite icon) {
+        GameObject toggleObj = Object.Instantiate(prefab, panel);
+        Toggle toggle = toggleObj.GetComponent<Toggle>();
+
+        Transform iconTransform = toggleObj.transform.Find("Icon");
+        if(iconTransform != null) {
+            if(iconTransform.TryGetComponent<Image>(out var iconImage)) iconImage.sprite = icon;
+        }
+        else Debug.LogWarning("Icon image not found inside Toggle prefab.");
+        return toggle;
     }
 }

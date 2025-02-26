@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461cc598f6bc3e9488d3cf7c05d1de1d, type: 3}
   m_Name: Bed w_Pillow
   m_EditorClassIdentifier: 
-  id: 1
-  name: Bed with Pillow
-  earningsRateMultiplier: 0.2
-  electricityConsumption: 2
-  waterConsumption: 2
-  sewageConsumption: 2
-  furnitureCost: 200
-  isPurchased: 0
-  rarityType: 1
-  furnitureType: 0
-  furniturePrefab: {fileID: 0}
-  furnitureIcon: {fileID: 0}
-  furnitureImage: {fileID: 0}
-  xPositionOffset: 0
-  yPositionOffset: 0
-  zPositionOffset: 0
-  instantiateLocation: {fileID: 0}
+  <Id>k__BackingField: 1723
+  <Name>k__BackingField: Bed WIth Pillow
+  <EarningsRateMultiplier>k__BackingField: 0.1
+  <PowerUsage>k__BackingField: 2
+  <WaterUsage>k__BackingField: 2
+  <WasteUsage>k__BackingField: 4
+  <FurnitureCost>k__BackingField: 230
+  <IsPurchased>k__BackingField: 0
+  <RarityType>k__BackingField: 1
+  <FurnitureType>k__BackingField: 0
+  <FurniturePrefab>k__BackingField: {fileID: 0}
+  <FurnitureIcon>k__BackingField: {fileID: 0}
+  <FurnitureImage>k__BackingField: {fileID: 0}
+  <XPositionOffset>k__BackingField: 0
+  <YPositionOffset>k__BackingField: 0
+  <ZPositionOffset>k__BackingField: 0
+  <InstantiateLocation>k__BackingField: {fileID: 0}
