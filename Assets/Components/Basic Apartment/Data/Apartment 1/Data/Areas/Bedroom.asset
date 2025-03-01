@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5173b62dbb49754478d8cfaf107542b6, type: 3}
+  m_Name: Bedroom
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: 12
+  <AreaTabIcon>k__BackingField: {fileID: 21300000, guid: e1040dd84c953d4408138b4df958a511, type: 3}
+  <AreaType>k__BackingField: 0
+  <FurnishingList>k__BackingField:
+  - {fileID: 11400000, guid: a1ed5f9e53a63134ebc7e4048b50c248, type: 2}
+  - {fileID: 11400000, guid: f36de8d843e10a2469ac29a2ef3e61f0, type: 2}

@@ -9,19 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5173b62dbb49754478d8cfaf107542b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bcf3cc040f1c9f49a88a942ce4d2f32, type: 3}
   m_Name: Bed
   m_EditorClassIdentifier: 
-  <Id>k__BackingField: 12
+  <Id>k__BackingField: 14134
   <Level>k__BackingField: 0
-  <LevelUpCost>k__BackingField: 100
+  <MaxLevel>k__BackingField: 100
+  <LevelUpCost>k__BackingField: 5
   <LevelUpCostMultiplier>k__BackingField: 0.1
-  <BaseEarningsRate>k__BackingField: 10
-  <FinalEarningsRate>k__BackingField: 0
-  <EquippedFurniture>k__BackingField: {fileID: 11400000, guid: e2aece40b4b8f6e4b8326d9d06b16116, type: 2}
-  <Icon>k__BackingField: {fileID: 21300000, guid: aab8c71a96e15484b98cc4e280ad6072, type: 3}
+  <BaseEarningsRate>k__BackingField: 110
+  <BaseEarningsRateMultiplier>k__BackingField: 0.1
+  <FinalEarningsRate>k__BackingField: 11
+  <FurnishingTabIcon>k__BackingField: {fileID: 21300000, guid: 81f3a43e3732bf34ebf4e861e1dd6afc, type: 3}
+  <AreaFurnishingType>k__BackingField: 0
+  <EquippedFurniture>k__BackingField: {fileID: 11400000, guid: 668a8e3de7a53434c921ee5259049a5d, type: 2}
   <FurnitureList>k__BackingField:
   - {fileID: 11400000, guid: e2aece40b4b8f6e4b8326d9d06b16116, type: 2}
   - {fileID: 11400000, guid: 668a8e3de7a53434c921ee5259049a5d, type: 2}
-  <AreaType>k__BackingField: 0
-  <AreaFurnishingType>k__BackingField: 0
