@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bcf3cc040f1c9f49a88a942ce4d2f32, type: 3}
   m_Name: Cabinet
   m_EditorClassIdentifier: 
+  masterData: {fileID: 11400000, guid: f2b5f4114734d444181b3657615f54c0, type: 2}
   <Id>k__BackingField: 34324
   <Level>k__BackingField: 0
   <MaxLevel>k__BackingField: 100
@@ -19,7 +20,7 @@ MonoBehaviour:
   <LevelUpCostMultiplier>k__BackingField: 0.1
   <BaseEarningsRate>k__BackingField: 123
   <BaseEarningsRateMultiplier>k__BackingField: 0.1
-  <FinalEarningsRate>k__BackingField: 61.5
+  <FinalEarningsRate>k__BackingField: 184
   <FurnishingTabIcon>k__BackingField: {fileID: 21300000, guid: 29257c6db40b0124cba61c8640db691a, type: 3}
   <AreaFurnishingType>k__BackingField: 1
   <EquippedFurniture>k__BackingField: {fileID: 11400000, guid: 7fe6b0c1e33d6f5458c091656ab21858, type: 2}

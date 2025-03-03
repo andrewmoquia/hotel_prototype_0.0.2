@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461cc598f6bc3e9488d3cf7c05d1de1d, type: 3}
   m_Name: Bed w_Pillow
   m_EditorClassIdentifier: 
+  isPurchased: 1
   <Id>k__BackingField: 1723
   <Name>k__BackingField: Bed WIth Pillow
   <Description>k__BackingField: 
@@ -20,13 +21,8 @@ MonoBehaviour:
   <WaterUsage>k__BackingField: 2
   <WasteUsage>k__BackingField: 4
   <FurnitureCost>k__BackingField: 230
-  <IsPurchased>k__BackingField: 0
   <RarityType>k__BackingField: 1
   <FurnitureType>k__BackingField: 0
-  <FurniturePrefab>k__BackingField: {fileID: 0}
+  <FurniturePrefab>k__BackingField: {fileID: 4937033734421586360, guid: 2333f5e6cf33e2741ae6c95caaee1293, type: 3}
   <FurnitureIcon>k__BackingField: {fileID: 21300000, guid: 95ab2ef1151205444af7b715fff23f08, type: 3}
   <FurnitureImage>k__BackingField: {fileID: 0}
-  <XPositionOffset>k__BackingField: 0
-  <YPositionOffset>k__BackingField: 0
-  <ZPositionOffset>k__BackingField: 0
-  <InstantiateLocation>k__BackingField: {fileID: 0}

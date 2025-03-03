@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bcf3cc040f1c9f49a88a942ce4d2f32, type: 3}
   m_Name: Sink
   m_EditorClassIdentifier: 
+  masterData: {fileID: 11400000, guid: f2b5f4114734d444181b3657615f54c0, type: 2}
   <Id>k__BackingField: 14134
   <Level>k__BackingField: 0
   <MaxLevel>k__BackingField: 100
@@ -19,7 +20,7 @@ MonoBehaviour:
   <LevelUpCostMultiplier>k__BackingField: 0.1
   <BaseEarningsRate>k__BackingField: 123
   <BaseEarningsRateMultiplier>k__BackingField: 0.1
-  <FinalEarningsRate>k__BackingField: 12.3
+  <FinalEarningsRate>k__BackingField: 135
   <FurnishingTabIcon>k__BackingField: {fileID: 21300000, guid: 88959dab7cd0dc14cbed7ba8647a64e2, type: 3}
   <AreaFurnishingType>k__BackingField: 3
   <EquippedFurniture>k__BackingField: {fileID: 11400000, guid: e2aece40b4b8f6e4b8326d9d06b16116, type: 2}

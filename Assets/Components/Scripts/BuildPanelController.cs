@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.Linq;
 using Unity.VisualScripting;
 using Unity.Collections;
+using System;
 
 public class BuildPanelController : MonoBehaviour {
 
@@ -122,11 +123,17 @@ public class BuildPanelController : MonoBehaviour {
             wasteUsageText.text = furnitureData.WasteUsage.ToString();
             nameText.text = furnitureData.Name.ToString();
             descriptionText.text = furnitureData.Description.ToString();
-            dollarRateText.text = (apartmentFurnishingData.BaseEarningsRate + (apartmentFurnishingData.BaseEarningsRate * furnitureData.EarningsRateMultiplier)).ToString();
+
+            if(furnitureData == apartmentFurnishingData.EquippedFurniture) {
+                dollarRateText.text = $"{apartmentFurnishingData.FinalEarningsRate}";
+            }
+            else {
+                int calculatedFinalRate = (int)Math.Round(apartmentFurnishingData.BaseEarningsRate + (apartmentFurnishingData.BaseEarningsRate * furnitureData.EarningsRateMultiplier));
+                dollarRateText.text = $"{calculatedFinalRate}";
+            }
 
             Button l_Button = levelUpButton.GetComponent<Button>();
             TextMeshProUGUI l_ButtonText = l_Button.GetComponentInChildren<TextMeshProUGUI>();
-
             if(apartmentFurnishingData.MaxLevel == apartmentFurnishingData.Level) {
                 l_ButtonText.text = $"Max Level";
             }
@@ -147,15 +154,29 @@ public class BuildPanelController : MonoBehaviour {
                 d_Button.interactable = false;
                 d_ButtonImage.color = new Color32(210, 210, 210, 255);
                 d_ButtonText.color = new Color32(121, 121, 121, 255);
+                d_ButtonText.text = "Equipped Furniture";
             }
             else {
                 d_Button.interactable = true;
                 d_ButtonImage.color = Color.white;
                 d_ButtonText.color = Color.black;
-                d_Button.onClick.AddListener(() => {
-                    apartmentFurnishingData.EquipFurniture(furnitureData);
-                    UpdateInfoDisplay(furnitureData, apartmentFurnishingData);
-                });
+
+
+                if(furnitureData.IsPurchased) {
+                    d_ButtonText.text = "Select Furniture";
+                    d_Button.onClick.AddListener(() => {
+                        apartmentFurnishingData.EquipFurniture(furnitureData);
+                        UpdateInfoDisplay(furnitureData, apartmentFurnishingData);
+                    });
+                }
+                else {
+                    d_ButtonText.text = $"Buy Furniture: {furnitureData.FurnitureCost}";
+                    d_Button.onClick.AddListener(() => {
+                        apartmentFurnishingData.PurchasedFurniture(furnitureData);
+                        UpdateInfoDisplay(furnitureData, apartmentFurnishingData);
+                    });
+                }
+
             }
         }
     }

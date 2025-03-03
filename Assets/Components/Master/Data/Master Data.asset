@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cdbd076f4ea2443805e6f331ea4701, type: 3}
   m_Name: Master Data
   m_EditorClassIdentifier: 
-  apartments: []
-  utilities: []
+  <Apartments>k__BackingField:
+  - {fileID: 11400000, guid: 8f283c97b6a5cc7408b8509ead3941c7, type: 2}
+  <Utilities>k__BackingField: []
+  <DollarsData>k__BackingField: {fileID: 11400000, guid: 23a38fd2bb80b0048a3fcaddf8a4697f, type: 2}
+  powerStorage: 3
+  waterStorage: 3
+  wasteStorage: 3
